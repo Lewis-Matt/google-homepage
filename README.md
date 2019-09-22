@@ -1,9 +1,9 @@
-#Summary
+# Summary
 
 This is a Odin Project assignment for Web Development 101; Project: HTML/CSS. The goal is to copy the Google homepage so it looks identical (it does not have to function 100%; the goal is basic design).
 ***
 
-##After-action:
+## After-action:
 
 1. I feel confident in basic Git workflow and terminal commands.
 
@@ -22,7 +22,7 @@ This is a Odin Project assignment for Web Development 101; Project: HTML/CSS. Th
 	- You can style the entire page w/o grid/flexbox, but it is worth the time to experiment.
 	- Organize your CSS with comments /*your comment*/
 
-6. Formatting this README has been a  PITA:angry:. Go [HERE](https://help.github.com/en/articles/basic-writing-and-formatting-syntax#lists) for syntax.
+6. Formatting this README has been a  PITA :angry:. Go [HERE](https://help.github.com/en/articles/basic-writing-and-formatting-syntax#lists) for syntax.
 ***
 
-###Happy Coding!
+### Happy Coding!
