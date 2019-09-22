@@ -20,4 +20,4 @@ This is a Odin Project assignment for Web Development 101; Project: HTML/CSS. Th
 	- You can style the entire page w/o grid/flexbox, but it is worth the time to experiment.
 	- Organize your CSS with comments /*your comment*/
 
-6. Formatting this README has been a PITA.
+6. Formatting this README has been a PITA. Go [HERE](https://help.github.com/en/articles/basic-writing-and-formatting-syntax#lists) for syntax.
