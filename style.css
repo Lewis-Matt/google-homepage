@@ -1,6 +1,91 @@
+/* General Selectors */
+
+html {
+    height: 100%;
+}
+
 body {
-    background-color: rgb(255, 255, 255);
+    height: 100%;
+    font-size: 14px;
+    display: grid;
+    grid-template-areas: 'nav nav nav' 'main main main' 'footer footer footer';
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
 }
-p {
-    color: rgb(0, 0, 0);
+
+li {
+    display: inline-block;
 }
+
+/* Nav Bar */
+
+.nav-bar {
+    grid-area: nav;
+    display: flex;
+    position: relative;
+    top: 20px;
+    height: 40px;
+}
+
+.topleft {
+    display: inline-block;
+    text-align: left;
+    text-justify: center;
+}
+
+.topright {
+    display: inline-block;
+    text-align: right;
+    text-justify: center;
+}
+
+.icon {
+    display: inline-block;
+    object-fit: cover;
+    max-height: 25px;
+    max-width: auto;
+    justify-self: center;
+}
+
+/* Main */
+
+.main-content {
+    grid-area: main;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+#search-bar {
+    width: 475px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.button {
+    width: 150px;
+    font-size: 14px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    opacity: 0.7;
+}
+
+.button :hover {
+    opacity: 1.0;
+}
+
+/* Footer */
+
+.footer {
+    grid-area: footer;
+    height: 40px;
+}
+
+.bottomleft {}
+
+.bottomright {}
