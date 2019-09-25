@@ -5,55 +5,69 @@ html {
 }
 
 body {
-    height: 100%;
     font-size: 14px;
-    display: grid;
-    grid-template-areas: 'nav nav nav' 'main main main' 'footer footer footer';
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    min-height: 100%;
+    position: relative;
+    font-family: Roboto, sans-serif;
 }
 
 li {
     display: inline-block;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* Nav Bar */
 
-.nav-bar {
-    grid-area: nav;
-    display: flex;
+.header {
+    display: block;
+    height: 30px;
     position: relative;
-    top: 20px;
-    height: 40px;
+    top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
 }
 
 .topleft {
-    display: inline-block;
+    grid-column-start: 1;
     text-align: left;
-    text-justify: center;
+}
+
+.topleft li {
+    padding: 5px;
+    margin: 5px;
 }
 
 .topright {
-    display: inline-block;
+    grid-column-start: 3;
     text-align: right;
-    text-justify: center;
+}
+
+.topright li {
+    padding: 5px;
+    margin: 5px;
 }
 
 .icon {
-    display: inline-block;
+    vertical-align: middle;
     object-fit: cover;
     max-height: 25px;
-    max-width: auto;
-    justify-self: center;
 }
 
 /* Main */
 
 .main-content {
-    grid-area: main;
-    justify-self: center;
-    align-self: center;
     text-align: center;
+    margin-top: 200px;
 }
 
 #search-bar {
@@ -82,10 +96,38 @@ li {
 /* Footer */
 
 .footer {
-    grid-area: footer;
-    height: 40px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: rgba(128, 128, 128, 0.35);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    min-width: 100%;
 }
 
-.bottomleft {}
+.bottomleft {
+    grid-column-start: 1;
+    display: inline-block;
+    text-align: left;
+    text-justify: center;
+}
 
-.bottomright {}
+.bottomleft li {
+    padding: 5px;
+    margin: 5px;
+}
+
+.bottomright {
+    grid-column-start: 3;
+    display: inline-block;
+    text-align: right;
+    text-justify: center;
+}
+
+.bottomright li {
+    padding: 5px;
+    margin: 5px;
+}
